@@ -1,0 +1,7 @@
+gradio
+opencv-python
+pillow
+numpy
+ultralytics
+manga-ocr
+deep-translator

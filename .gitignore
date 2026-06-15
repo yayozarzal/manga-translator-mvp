@@ -1,0 +1,37 @@
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Variables locales
+.env
+
+# Resultados temporales
+runs/
+data/input/*
+data/output/*
+
+# Mantener estructura de carpetas
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# Dataset pesado
+datasets/speech-bubbles/train/
+datasets/speech-bubbles/valid/
+datasets/speech-bubbles/test/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

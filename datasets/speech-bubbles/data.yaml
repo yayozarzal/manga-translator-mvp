@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['speech-bubbles']
+
+roboflow:
+  workspace: pers-kdqu3
+  project: manga-speech-bubble-detection-1rbgq
+  version: 15
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/pers-kdqu3/manga-speech-bubble-detection-1rbgq/dataset/15
