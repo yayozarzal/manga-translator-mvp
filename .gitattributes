@@ -1,1 +1,2 @@
 *.pt filter=lfs diff=lfs merge=lfs -text
+requirements-lock.txt text eol=lf
