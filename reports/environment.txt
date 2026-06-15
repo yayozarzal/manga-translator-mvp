@@ -1,0 +1,33 @@
+=== PYTHON ===
+Python 3.12.10
+
+=== PIP ===
+pip 26.1.2 from D:\UNIVALLE\SISTEMAS\7MOSEMESTRE\TECNOLOGIAS_EMERGENTES_II\Proyecto_Manga\manga-translator-mvp\venv\Lib\site-packages\pip (python 3.12)
+
+=== PYTORCH Y CUDA ===
+Torch: 2.7.1+cu118
+CUDA compilada: 11.8
+CUDA disponible: True
+GPU: NVIDIA GeForce RTX 3070 Laptop GPU
+
+=== GPU Y DRIVER ===
+Mon Jun 15 19:35:27 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 531.18                 Driver Version: 531.18       CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                      TCC/WDDM | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3070 L...  WDDM | 00000000:01:00.0 Off |                  N/A |
+| N/A   42C    P8               14W /  N/A|    107MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      4404    C+G   ...ram Files\Norton\Suite\NortonUI.exe    N/A      |
++---------------------------------------------------------------------------------------+
