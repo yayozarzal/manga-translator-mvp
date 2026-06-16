@@ -16,12 +16,24 @@ from src.translator import TextTranslator
 from src.editor import BubbleEditor
 from configs.settings import RANDOM_SEED
 from src.reproducibility import set_reproducibility
+from pathlib import Path
 
 
 set_reproducibility(RANDOM_SEED)
 
+DEMO_DIR = Path("data/demo")
 
-MODEL_PATH = "models/comic-speech-bubble-detector.pt"
+DEMO_IMAGES = [
+    str(path)
+    for path in [
+        DEMO_DIR / "caso_1_facil.png",
+        DEMO_DIR / "caso_2_comun.png",
+        DEMO_DIR / "caso_3_dificil.png",
+    ]
+    if path.is_file()
+]
+
+MODEL_PATH = "models/bubble_detector.pt"
 
 # Si todavía no tienes un modelo entrenado, puedes usar temporalmente:
 # MODEL_PATH = "yolov8n.pt"
@@ -331,6 +343,12 @@ with gr.Blocks(title="Manga Translator MVP") as demo:
         label="Sube una imagen de manga",
         type="pil"
     )
+    
+    gr.Examples(
+        examples=[[image_path] for image_path in DEMO_IMAGES],
+        inputs=[image_input],
+        label="Casos preparados para demostración"
+    )
 
     with gr.Row():
         load_button = gr.Button("Cargar imagen")
@@ -409,6 +427,8 @@ with gr.Blocks(title="Manga Translator MVP") as demo:
         lines=10,
         interactive=False
     )
+    
+    
 
     load_button.click(
         fn=load_manga_image,
